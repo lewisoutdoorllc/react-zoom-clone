@@ -27,7 +27,7 @@ export default Home
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "orange",
+        backgroundColor: "#353535",
         padding: 15,
     }
 })
