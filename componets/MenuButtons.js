@@ -2,16 +2,50 @@ import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
+const items = [
+    {
+        id: 1,
+        name: "video-camera",
+        title: "New Meeting",
+        customColor: "green",
+    },
+    {
+        id: 2,
+        name: "plus-square",
+        title: "Join Meeting",
+    },
+    {
+        id: 3,
+        name: "calendar",
+        title: "Schedule",
+    },
+    {
+        id: 4,
+        name: "upload",
+        title: "Share Screen",
+    },
+]
+
 function MenuButtons() {
     return (
         <View style={styles.container}>
             {/* FIRST BUTTON */}
-            <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.firstButton}>
-                    <FontAwesome name={'video-camera'} size={23} color={'red'} />
-                </TouchableOpacity>
-                <Text style={styles.menuText}>New Meeting</Text>
-            </View>
+            {items.map((item, index) =>
+                <View
+                    key={index}
+                    style={styles.buttonsContainer}>
+                    <TouchableOpacity
+                        style={{...styles.button, backgroundColor: item.customColor ? item.customColor : "#2b5fd8" }}>
+                        <FontAwesome
+                            name={item.name}
+                            size={23}
+                            color={'red'} />
+                    </TouchableOpacity>
+                    <Text
+                        style={styles.menuText}>{item.title}</Text>
+                </View>
+            )}
+
             {/* SECOND BUTTON */}
         </View>
     )
@@ -25,14 +59,17 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         borderBottomColor: 'green',
         borderBottomWidth: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+
     },
     buttonsContainer: {
+        flex: 1,
         alignItems: 'center',
     },
-    firstButton: {
+    button: {
         width: 50,
         height: 50,
-        backgroundColor: 'blue',
         borderRadius: 15,
         justifyContent: 'center',
         alignItems: 'center',
