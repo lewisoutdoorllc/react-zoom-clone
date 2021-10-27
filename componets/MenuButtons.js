@@ -35,7 +35,14 @@ function MenuButtons() {
                     key={index}
                     style={styles.buttonsContainer}>
                     <TouchableOpacity
-                        style={{...styles.button, backgroundColor: item.customColor ? item.customColor : "#2b5fd8" }}>
+                        style={{
+                            width: 50,
+                            height: 50,
+                            borderRadius: 15,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            backgroundColor: item.customColor ? item.customColor : "#2b5fd8"
+                        }}>
                         <FontAwesome
                             name={item.name}
                             size={23}
@@ -67,13 +74,13 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
     },
-    button: {
-        width: 50,
-        height: 50,
-        borderRadius: 15,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
+    // button: {
+    //     width: 50,
+    //     height: 50,
+    //     borderRadius: 15,
+    //     justifyContent: 'center',
+    //     alignItems: 'center',
+    // },
     menuText: {
         color: 'green',
         fontSize: 12,
