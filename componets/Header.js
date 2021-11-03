@@ -5,9 +5,9 @@ import Entypo from "react-native-vector-icons/Entypo"
 function Header() {
     return (
         <View style={styles.container}>
-            <Entypo name="notification" size={30} color="light-gray" />
+            <Entypo name="notification" size={30} color="#b7b7b7" />
             <Text style={styles.heading}>Meet & Chat</Text>
-            <Entypo name="new-message" size={30} color="light-gray" />
+            <Entypo name="new-message" size={30} color="#b7b7b7" />
         </View>
     )
 }

@@ -4,14 +4,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import Home from './screens/Home';
 import MeetingRoom from './screens/MeetingRoom';
 
-function Navigation() {
+export default function Navigation() {
     const Stack = createStackNavigator();
 
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName={Home}>
                 <Stack.Screen
-                    name='Home James'
+                    name='Home'
                     component={Home}
                     options={{
                         headerShown: false,
@@ -21,7 +21,7 @@ function Navigation() {
                     name='Room'
                     component={MeetingRoom}
                     options={{
-                        title: 'Start A New Metting',
+                        title: 'New Meeting',
                         headerStyle: {
                             backgroundColor: 'green',
                             // shadowOpacity: 0,
@@ -38,4 +38,3 @@ function Navigation() {
     )
 }
 
-export default Navigation
