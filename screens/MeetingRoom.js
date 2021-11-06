@@ -4,14 +4,18 @@ import StartMeeting from '../componets/StartMeeting'
 import { io } from "socket.io-client"
 // import {withSocket} from 'react-socket-io-client'
 
+// This creates the socket connection
+let socket;
+
 export default function MeetingRoom() {
     const [name, setName] = useState()
     const [roomId, setRoomId] = useState()
 
     useEffect(() => {
-        const API_URL = 'http://192.168.86.27'
+        const API_URL = 'http://142.196.249.68:3001'
+        // const API_URL = 'http://localhost:3001'
         socket = io(`${API_URL}`);
-        socket.on('connect', () => {
+        socket.on('connection', () => {
             console.log('connected')
         })
     }, [])

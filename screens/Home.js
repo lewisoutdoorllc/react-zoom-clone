@@ -13,11 +13,6 @@ export default function Home({ navigation }) {
                 <SearchBar />
                 <MenuButtons navigation={navigation} />
                 <ContactMenu />
-                <>
-                    <div>
-                        <h1 style={{color:'white'}}>Home</h1>
-                    </div>
-                </>
             </SafeAreaView>
         </View>
     )

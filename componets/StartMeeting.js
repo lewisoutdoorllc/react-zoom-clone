@@ -49,7 +49,6 @@ const styles = StyleSheet.create({
         borderColor: '#686868',
         padding: 12,
         // justifyContent: 'center',
-
     },
     textInput: {
         // backgroundColor: 'green',
