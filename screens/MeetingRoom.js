@@ -12,11 +12,11 @@ export default function MeetingRoom() {
     const [roomId, setRoomId] = useState()
 
     useEffect(() => {
-        const API_URL = 'http://142.196.249.68:3001'
-        // const API_URL = 'http://localhost:3001'
+            console.log('19006 connected')
+        const API_URL = 'http://localhost:19006'
         socket = io(`${API_URL}`);
         socket.on('connection', () => {
-            console.log('connected')
+            console.log('19006 connected')
         })
     }, [])
 
