@@ -43,7 +43,7 @@ function ContactMenu() {
                             )
                     }
                     {/*  text area */}
-                    <Text style={styles.text}>
+                    <Text style={styles.text} size={18}>
                         {contact.name}
                     </Text>
                 </View>
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     text: {
         color: '#858585',
         padding: 15,
-        fontSize: 18,
+        // fontSize: '18',
     },
     image: {
         width: 55,

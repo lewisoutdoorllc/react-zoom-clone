@@ -16,7 +16,7 @@ export default function StartMeeting({ name, roomId, setRoomId, setName }) {
                 </View>
                 <View style={styles.info}>
                     <TextInput
-                        style={styles.textInput}
+                        style={styles.textInput} size={20}
                         value={roomId}
                         placeholder='Enter A Room ID'
                         placeholderTextColor='#9b9b9b'
@@ -53,10 +53,10 @@ const styles = StyleSheet.create({
     textInput: {
         // backgroundColor: 'green',
         color: 'white',
-        fontSize: '20',
+        // fontSize: '20',
     },
     startMeetingBtn: {
-        width: '80vw',
+        width: '80%',
         marginTop: 20,
         justifyContent: 'center',
         alignItems: 'center',

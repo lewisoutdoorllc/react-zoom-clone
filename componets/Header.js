@@ -6,7 +6,7 @@ function Header() {
     return (
         <View style={styles.container}>
             <Entypo name="notification" size={30} color="#b7b7b7" />
-            <Text style={styles.heading}>Meet & Chat</Text>
+            <Text style={styles.heading} size={20}>Meet & Chat</Text>
             <Entypo name="new-message" size={30} color="#b7b7b7" />
         </View>
     )
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     },
     heading: {
         color: "blue",
-        fontSize: 20,
+        // fontSize: "20",
         fontWeight: "800",
     }
 })

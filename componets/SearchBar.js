@@ -7,7 +7,7 @@ function SearchBar() {
     return (
         <View style={styles.container}>
             <Fontisto name="search" size={20} color="#858585" />
-            <Text style={styles.textSearchBar}>Search</Text>
+            <Text style={styles.textSearchBar} size={20}>Search</Text>
         </View>
     )
 }
@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
     textSearchBar: {
         color: "#858585",
         paddingLeft: 10,
-        fontSize: 20,
+        // fontSize: '20',
     },
 })

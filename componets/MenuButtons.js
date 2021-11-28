@@ -56,7 +56,7 @@ const openMeeting = () => {
                             color={'red'} />
                     </TouchableOpacity>
                     <Text
-                        style={styles.menuText}>{item.title}</Text>
+                        style={styles.menuText} size={12}>{item.title}</Text>
                 </View>
             )}
 
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     // },
     menuText: {
         color: 'green',
-        fontSize: 12,
+        // fontSize: '12',
         paddingTop: 10,
         fontWeight: '700',
     },
